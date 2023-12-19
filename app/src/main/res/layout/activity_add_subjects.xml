@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityAddSubjects">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="Thêm môn học"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:id="@+id/EditTextSubjectTitle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Tên môn học"
+        android:layout_width="300dp"
+        android:layout_height="60dp"></EditText>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/EditTextCredits"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:hint="Số tín chỉ"
+        android:layout_width="300dp"
+        android:layout_height="60dp"></EditText>
+    <EditText
+        android:id="@+id/EditTextTime"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:hint="Thời gian"
+        android:layout_width="300dp"
+        android:layout_height="60dp"></EditText>
+    <EditText
+        android:id="@+id/EditTextPlace"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:hint="Địa điểm"
+        android:layout_width="300dp"
+        android:layout_height="60dp"></EditText>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/EditTextThu"
+            android:hint="Thứ"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"></EditText>
+
+        <Spinner
+            android:id="@+id/spinner_ngaytrongtuan"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/EditTextBuoi"
+            android:hint="Sáng/Chiều"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"></EditText>
+
+        <Spinner
+            android:id="@+id/spinner_buoitrongngay"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonAddSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Thêm"></Button>
+
+</LinearLayout>
